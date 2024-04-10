@@ -22,4 +22,4 @@ This repository includes all the assignments I've been assigned during my Codewa
   <li>Task 2: </li>
 </ul>
 
-#### <a href="">Click here to view the Project Tasks</a>
+#### <a href="Web Development.pdf">Click here to view the Project Tasks</a>
