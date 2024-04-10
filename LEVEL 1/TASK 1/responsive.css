@@ -1,0 +1,82 @@
+@media screen and (max-width: 840px) {
+  section {
+    min-height: max-content;
+  }
+  /* HEADER */
+  nav .links {
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 0;
+    z-index: 99999999;
+    gap: 20px;
+    font-weight: bold;
+    background-color: var(--main);
+  }
+  nav .links a {
+    font-size: 20px;
+  }
+
+  .links.open {
+    width: 70%;
+  }
+
+  nav .menu-btn {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  /* HOME SECTION */
+  #home-sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #home-sec img {
+    width: 300px;
+  }
+
+  /* ABOUT SECTION */
+  .about-sec-main {
+    flex-direction: column;
+    width: 95%;
+  }
+  .about-sec-text {
+    font-size: 16px;
+  }
+  #about-sec img {
+    width: 300px;
+  }
+
+  /* SKILL SECTION */
+  .skill-sec-main img {
+    width: 250px;
+    display: none;
+  }
+  .skill-sec-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .skill-sec-list {
+    font-size: 18px;
+  }
+  /* PROJECT SECTION */
+
+  .project-template {
+    width: 100%;
+  }
+  .project-sec-list {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  /* CONTACT US */
+  .contact-form {
+    width: 70%;
+  }
+}

@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +30,7 @@
     <!-- NAV BAR -->
     <nav>
       <h1 class="nav-name">Jaskaran's Portfolio</h1>
+      <i class="fa-solid fa-bars menu-btn"></i>
       <div class="links">
         <a href="#home-sec">Home</a>
         <a href="#about-sec">About</a>
@@ -45,7 +47,12 @@
           <p>Hi there, My name is <span>Jaskaran Singh</span>.</p>
           <p>I am MERN Stack Developer.</p>
         </div>
-        <a class="a-button" href="#">Download CV</a>
+        <a
+          class="a-button"
+          href="https://res.cloudinary.com/jascloud/image/upload/v1712242775/portfolio/z6jgfafmyqjfq2alfajw.pdf"
+          target="_blank"
+          >Download CV</a
+        >
       </div>
     </section>
     <!-- About Section -->
@@ -88,13 +95,38 @@
       <div class="project-sec-list">
         <div class="project-template">
           <img src="../../IMAGES/p1.jpg" alt="Project Image" />
-          <h2>Project 1</h2>
+          <h2>Lernn - Education Reinvented</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-            deleniti maxime nisi assumenda iusto laboriosam veniam repudiandae
-            ratione nemo!
+            Lernn is an e-learning platform designed by students, for students.
           </p>
-          <button>View Details</button>
+          <a href="https://lernn.netlify.app/" class="a-button" target="_blank"
+            >View Deatils</a
+          >
+        </div>
+        <div class="project-template">
+          <img src="../../IMAGES/p1.jpg" alt="Project Image" />
+          <h2>Opentalks: Connect and Engage</h2>
+          <p>
+            Opentalks invites university students to unleash their voices and
+            join a vibrant community.
+          </p>
+          <a
+            href="https://opentalks.netlify.app/"
+            class="a-button"
+            target="_blank"
+            >View Deatils</a
+          >
+        </div>
+        <div class="project-template">
+          <img src="../../IMAGES/p1.jpg" alt="Project Image" />
+          <h2>HealthHealer.ai</h2>
+          <p>Embark on a journey to optimal health with HealthHealer.ai.</p>
+          <a
+            href="https://healthhealerai.netlify.app/"
+            class="a-button"
+            target="_blank"
+            >View Deatils</a
+          >
         </div>
       </div>
     </section>
@@ -137,5 +169,26 @@
         </p>
       </footer>
     </section>
+
+    <div class="blur hide"></div>
+
+    <script>
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        document.querySelector(".links").classList.add("open");
+        document.querySelector(".blur").classList.remove("hide");
+      });
+
+      document.querySelectorAll(".links a").forEach((el) => {
+        el.addEventListener("click", () => {
+          document.querySelector(".links").classList.remove("open");
+          document.querySelector(".blur").classList.add("hide");
+        });
+      });
+
+      document.querySelector(".blur").addEventListener("click", () => {
+        document.querySelector(".links").classList.remove("open");
+        document.querySelector(".blur").classList.add("hide");
+      });
+    </script>
   </body>
 </html>
