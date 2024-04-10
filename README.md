@@ -5,7 +5,7 @@ This repository includes all the assignments I've been assigned during my Codewa
 
 ### Tasks of Level 1
 <ul>
-  <li>Task 1: </li>
+  <li>Task 1: <a href="https://codeway-portfolio.netlify.app/" target="_blank">https://codeway-portfolio.netlify.app/</a> </li>
   <li>Task 2: </li>
   <li>Task 3: </li>
 </ul>
@@ -22,4 +22,4 @@ This repository includes all the assignments I've been assigned during my Codewa
   <li>Task 2: </li>
 </ul>
 
-#### <a href="">Click here to view the Project Tasks</a>
+#### <a href="Web Development.pdf">Click here to view the Project Tasks</a>
