@@ -31,6 +31,10 @@
     cursor: pointer;
   }
 
+  nav .nav-name {
+    font-size: 22px;
+  }
+
   /* HOME SECTION */
   #home-sec {
     flex-direction: column;
