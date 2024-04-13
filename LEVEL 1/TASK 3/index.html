@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./IMAGES/icon.png" type="image/x-icon" />
+    <title>Talknotes - The #1 AI voice note app</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="updateTimer()">
+    <!-- NAV BAR -->
+    <nav>
+      <img
+        src="https://talknotes.io/_ipx/w_150&q_80/images/brand/logo-color.svg"
+        alt="Company Logo"
+      />
+      <div class="links">
+        <a href="#hero">Try It</a>
+        <a href="#howItWorks">How it works</a>
+        <a href="#useCase">Use Cases</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="btns">
+        <button class="btn1">Login</button>
+        <button class="btn2">
+          <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- HERO Section -->
+    <section id="hero">
+      <div class="hero-right">
+        <img
+          src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=417853&theme=neutral&period=daily"
+          alt="Product of day image"
+        />
+        <h1>Turn messy thoughts into <span>actionable</span> notes. Fast.</h1>
+        <h2>The #1 AI. voice note app</h2>
+        <p>
+          Turn hours of note taking into minutes. Just record a voicenote, and
+          let the AI transcribe, clean up and structure it for you. Available on
+          web, iOS and Android.
+        </p>
+        <button>
+          <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div>
+          <p>Trusted by +3000 happy users</p>
+          <span
+            ><img src="./IMAGES/star-icon.svg" alt="star icon" />
+            <img src="./IMAGES/star-icon.svg" alt="star icon" />
+            <img src="./IMAGES/star-icon.svg" alt="star icon" />
+            <img src="./IMAGES/star-icon.svg" alt="star icon" />
+            <img src="./IMAGES/star-icon.svg" alt="star icon" />
+          </span>
+        </div>
+      </div>
+      <div class="hero-left">
+        <p>Try the demo here. Just press record and speak your mind.</p>
+        <div>
+          <h2>01:00</h2>
+          <div>
+            <p><i class="fa-solid fa-arrow-rotate-right"></i></p>
+            <p><i class="fa-solid fa-microphone"></i></p>
+            <p><i class="fa-solid fa-xmark"></i></p>
+          </div>
+          <p><i class="fa-solid fa-play"></i></p>
+        </div>
+        <button disabled>
+          <i class="fa-solid fa-arrow-right"></i> Choose a style
+        </button>
+      </div>
+    </section>
+    <!-- COMPANY LOGOS -->
+    <section id="brands">
+      <div class="brands-main">
+        <img src="./IMAGES/medium-icon.svg" alt="Medium Icon" />
+        <img src="./IMAGES/indieHacker-icon.svg" alt="Indie Hacker Icon" />
+        <img src="./IMAGES/foundr-icon.svg" alt="Foundr Icon" />
+        <img src="./IMAGES/scoopit-icon.svg" alt="Scoop It Icon" />
+      </div>
+      <p><i class="fa-solid fa-chevron-down"></i></p>
+    </section>
+    <!-- HOW IT WORKS? -->
+    <section id="howItWorks">
+      <h1>How does it Work?</h1>
+      <div class="working-main">
+        <div class="working-card">
+          <video
+            src="./IMAGES/step-1.mp4"
+            loop
+            autoplay
+            muted
+            playsinline
+            width="400px"
+          ></video>
+          <div>
+            <h2>1. Record Your Voice</h2>
+            <p>
+              Speak your thoughts & ideas. Don't stress about format, grammar,
+              pauses or mistakes, just talk naturally, we handle the rest.
+            </p>
+          </div>
+        </div>
+        <div class="working-card">
+          <div>
+            <h2>2. Choose a style</h2>
+            <p>
+              TalkNotes will transcribe your voice into any kind of content.
+              Transcript, Task list, journal entry, Blog post... Your creativity
+              is the only limit!
+            </p>
+          </div>
+          <video
+            src="./IMAGES/step-2.mp4"
+            loop
+            autoplay
+            muted
+            playsinline
+            width="400px"
+          ></video>
+        </div>
+        <div class="working-card">
+          <video
+            src="./IMAGES/step-3.mp4"
+            loop
+            autoplay
+            muted
+            playsinline
+            width="400px"
+          ></video>
+          <div>
+            <h2>3. Edit & organize</h2>
+            <p>
+              Tweak your note to your liking. Create folders, add tags, change
+              the format, edit the transcript or share it with others.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="useButton">
+        <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+
+    <!-- USE CASES -->
+    <section id="useCase">
+      <h1>Use cases</h1>
+      <div class="useCase-main">
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-lightbulb"></i> Brainstorming</h2>
+          <p>
+            Capture your creative sparks on the go! TalkNotes transcribes your
+            brainstorming sessions, so you can focus on your next big idea
+            without missing a beat.
+          </p>
+        </div>
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-pencil"></i> Content Creation</h2>
+          <p>
+            Create content effortlessly! Dictate your thoughts directly into
+            text and speed up the writing process. Ideal for bloggers, writers,
+            and content marketers.
+          </p>
+        </div>
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-book-open"></i> Journaling</h2>
+          <p>
+            Document your personal journey with ease! Voice journaling with
+            TalkNotes helps you express feelings, ideas, and memories without
+            the need to type.
+          </p>
+        </div>
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-microphone"></i> Interviews</h2>
+          <p>
+            Transcribe interviews in real-time! Whether it's for journalism or
+            research, TalkNotes provides accurate text from your recorded
+            conversations.
+          </p>
+        </div>
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-comment-dots"></i> Meetings</h2>
+          <p>
+            Make meetings more productive! Record discussions, transcribe them
+            instantly, and never miss an important detail again.
+          </p>
+        </div>
+        <div class="useCase-card">
+          <h2><i class="fa-solid fa-user-graduate"></i> Educational Notes</h2>
+          <p>
+            Enhance your learning! TalkNotes allows students and educators to
+            convert lectures and study sessions into clear, organized notes for
+            future reference.
+          </p>
+        </div>
+      </div>
+      <button class="useButton">
+        <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+
+    <!-- DEMO VIDEO -->
+    <section id="demoVideo">
+      <h1>Demo Video</h1>
+      <p>
+        Want to see the app in action? No worries, I've got you covered! Here is
+        a live demo showing how to create a note:
+      </p>
+      <div>
+        <p>(Watch in x2 if you're in a hurry)</p>
+        <video src="./IMAGES/talknotes-full-demo.mp4" controls muted></video>
+      </div>
+      <button class="useButton">
+        <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="review">
+      <div class="review-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <h3>Outstanding Quality</h3>
+        <p>
+          The quality of the transcriptions is fantastic and require virtually
+          no rework. Compared to incomparably more expensive professional
+          transcription tools, the results are dimensions better.
+        </p>
+        <div>
+          <div>
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+          </div>
+          <p>Thomas Mickeleit</p>
+          <p>Germany</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <h3>A huge time-saver</h3>
+        <p>
+          This is really great app and a huge time-saver. I like that the emails
+          are in my personal style unlike other ai apps where they are really
+          formulaic
+        </p>
+        <div>
+          <div>
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+          </div>
+          <p>Pier Smulders</p>
+
+          <p>New Zealand</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <h3>Had been looking for something exactly like this!</h3>
+        <p>
+          I had been looking for a while for exactly this type of app, and I've
+          yet to find one that works as seamless as this one! The multilingual
+          input works really smooth
+        </p>
+        <div>
+          <div>
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+            <img src="./IMAGES/star-icon.svg" alt="Start Icons" />
+          </div>
+          <p>Guido</p>
+          <p>Netherlands</p>
+        </div>
+      </div>
+    </section>
+    <!-- PRICING -->
+    <section id="pricing">
+      <h1>Pricing</h1>
+      <p>Turn your ramblings into actionable notes</p>
+      <div class="pricing-time">
+        <p id="timer"></p>
+        <p>Limited time Launch offer: up to 65% off</p>
+      </div>
+      <div class="price-card">
+        <div class="price">
+          <h1><span>$69</span> <sup>$197</sup></h1>
+          <p>For a whole year of access</p>
+          <button class="useButton">
+            <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <p><i class="fa-solid fa-shield"></i> Secure payment with Stripe</p>
+        </div>
+        <div class="feature">
+          <p>TalkNotes + Include:</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> iOS and Android app</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited notes</li>
+            <li><i class="fa-solid fa-check"></i> 20 minutes recordings</li>
+            <li><i class="fa-solid fa-check"></i> File upload</li>
+            <li><i class="fa-solid fa-check"></i> Custom styles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="trust">
+        <p>Trusted by +3000 happy users</p>
+        <span
+          ><img src="./IMAGES/star-icon.svg" alt="star icon" />
+          <img src="./IMAGES/star-icon.svg" alt="star icon" />
+          <img src="./IMAGES/star-icon.svg" alt="star icon" />
+          <img src="./IMAGES/star-icon.svg" alt="star icon" />
+          <img src="./IMAGES/star-icon.svg" alt="star icon" />
+        </span>
+      </div>
+      <div class="brands-main">
+        <img src="./IMAGES/medium-icon.svg" alt="Medium Icon" />
+        <img src="./IMAGES/indieHacker-icon.svg" alt="Indie Hacker Icon" />
+        <img src="./IMAGES/foundr-icon.svg" alt="Foundr Icon" />
+        <img src="./IMAGES/scoopit-icon.svg" alt="Scoop It Icon" />
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faq">
+      <h1>F.A.Q</h1>
+      <div class="faq-container">
+        <div class="faq-template">
+          <div>
+            <h2>Is there a mobile app?</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="hide">
+            Yes, Talknotes is available for both iOS and Android. You can
+            download it from the App Store or Google Play Store.
+          </p>
+        </div>
+        <div class="faq-template">
+          <div>
+            <h2>How accurate is the voice-to-text conversion?</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="hide">
+            Our state-of-the-art AI technology ensures a high accuracy rate.
+            However, it may vary depending on the clarity of the speech and
+            background noise. You can always edit the text if needed!
+          </p>
+        </div>
+        <div class="faq-template">
+          <div>
+            <h2>Can I use TalkNotes in different languages?</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="hide">
+            Yes! TalkNotes supports 50+ languages: Afrikaans, Arabic, Armenian,
+            Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese,
+            Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French,
+            Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic,
+            Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian,
+            Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian,
+            Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak,
+            Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish,
+            Ukrainian, Urdu, Vietnamese, and Welsh.
+          </p>
+        </div>
+        <div class="faq-template">
+          <div>
+            <h2>What about privacy?</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <p class="hide">
+            Glad you asked! All audio files are deleted after they are
+            transcribed, and we don't train the AI using your notes. Your notes
+            are 100% yours.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="end">
+      <div>
+        <p>Turn messy thoughts into actionable notes</p>
+        <p>
+          Speak your ideas & turn your ramblings into usable content. Create
+          unlimited notes, record audio up to 20 minutes long, and give custom
+          instructions.
+        </p>
+        <button>
+          <i class="fa-solid fa-arrow-right"></i> Get Talknotes
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <img src="./IMAGES/banner-thumbnail.jpg" alt="Banner" />
+    </section>
+    <footer>
+      <div class="left">
+        <img
+          src="https://talknotes.io/_ipx/q_80&s_150x36/images/brand/logo-white.svg"
+          alt="Icon"
+        />
+        <p>Turn your thoughts into actionable notes.</p>
+        <p>&copy; 2023 - talknotes.io All rights reserved.</p>
+        <div>
+          <a href="https://www.facebook.com/TalkNotesApp">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/TalkNotesApp"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.youtube.com/@TalkNotesApp"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://www.tiktok.com/@TalkNotesApp">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+      <div class="links1">
+        <p>USE CASES</p>
+        <a href="https://talknotes.io/use-case/brainstorming">
+          Brainstorming
+        </a>
+        <p>LINKS</p>
+        <a href="https://talknotes.io/reviews"> Reviews </a>
+        <a href="https://talknotes.io/pricing"> Pricing </a>
+        <a href="https://talknotes.io/download"> Download </a>
+        <a href="https://tally.so/r/mVPxPN"> Affiliate Program </a>
+        <a href="https://talknotes.io/faq"> F.A.Q </a>
+        <a href="https://talknotes.io/blog"> Blog </a>
+      </div>
+      <div class="links2">
+        <p>LEARN</p>
+        <a href="https://talknotes.io/resources/how-to-transcribe-voice-memos">
+          How to transcribe voice memos
+        </a>
+        <a href="https://talknotes.io/brainstorming/ai"> Brainstorming AI </a>
+        <p>FREE TOOLS</p>
+        <a href="https://talknotes.io/tools/transcribe-to-text/voice-memo">
+          Voice memo transcription
+        </a>
+        <a href="https://talknotes.io/tools/transcribe-to-text/mp3">
+          MP3 to text converter
+        </a>
+      </div>
+      <div class="links3">
+        <p>CONTACT</p>
+        <a href=""> support@talknotes.io </a>
+
+        <p class="address">
+          1309 Coffen Avenue STE 1200, Sheridian, Wyoming, 82801, United States,
+          (302) 404-3928
+        </p>
+        <p>LEGAL</p>
+        <a href="https://talknotes.io/legal/privacy"> Privacy Policy </a>
+        <a href="https://talknotes.io/legal/terms"> Terms of Service </a>
+        <a href="https://talknotes.io/legal/facebook-disclaimer">
+          Facebook Disclaimer
+        </a>
+      </div>
+    </footer>
+    <i class="fa-regular fa-comments contact-chat"></i>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
