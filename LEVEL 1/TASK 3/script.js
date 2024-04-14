@@ -43,3 +43,18 @@ document.querySelector(".faq-container").addEventListener("click", (event) => {
     }
   }
 });
+
+document.querySelector(".menu-btn").addEventListener("click", function (e) {
+  const target = e.target;
+  document.querySelector(".links-small").classList.toggle("open");
+  const isClose = target.classList.contains("close") ? true : false;
+  if (isClose) {
+    target.classList.remove("close");
+    target.classList.add("open");
+    target.innerHTML = `<i class="fa-solid fa-xmark"></i> Close`;
+  } else {
+    target.classList.remove("open");
+    target.classList.add("close");
+    target.innerHTML = `<i class="fa-solid fa-bars"></i> Menu`;
+  }
+});

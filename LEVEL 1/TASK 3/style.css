@@ -30,6 +30,7 @@ html {
 body {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath fill='%23878787' fill-opacity='.1' fill-rule='evenodd' d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2zm0-30V0h-2v4h-4v2h4v4h2V6h4V4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2zM6 4V0H4v4H0v2h4v4h2V6h4V4z'/%3E%3C/svg%3E");
   background-color: #f9fafb;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -50,23 +51,86 @@ nav > img {
   width: 150px;
 }
 
+.menu-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--whitell);
+  border: solid 1px #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+  display: none;
+}
+
+.links-small {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  background-color: var(--whitell);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in;
+}
+
+.links-small.open {
+  height: 65vh;
+}
+
+.links-small > .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.links-small > .links > a {
+  font-size: 24px;
+}
+
+.links-small > .btns {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px;
+  padding-top: 0;
+}
+
+.links-small > .btns > button {
+  width: 100%;
+}
+
+.menu-btn i {
+  color: var(--greyl);
+  font-weight: bold;
+}
+
 nav > .links {
   display: flex;
   align-items: center;
   gap: 48px;
 }
 
-nav > .links > a {
+nav > .links > a,
+.links-small > .links > a {
   text-decoration: none;
   color: var(--grey);
   font-weight: 500;
   transition: color 0.4s ease-in-out;
 }
-nav > .links > a:hover {
+nav > .links > a:hover,
+.links-small > .links > a:hover {
   color: var(--blue);
 }
 
-nav > .btns > button {
+nav > .btns > button,
+.links-small > .btns > button {
   padding: 10px 20px;
   border-radius: 6px;
   font-weight: 500;
@@ -75,7 +139,8 @@ nav > .btns > button {
   outline: none;
   cursor: pointer;
 }
-nav > .btns {
+nav > .btns,
+.links-small > .btns {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -248,12 +313,14 @@ nav .btn2 {
   font-size: 32px;
   border-radius: 50%;
   cursor: pointer;
+  opacity: 1;
 }
 
 /* BRANDS */
 #brands > .brands-main {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   opacity: 0.7;
   flex-wrap: wrap;
@@ -263,7 +330,6 @@ nav .btn2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: max-content;
   margin: 0 auto;
   padding: 50px;
 }
@@ -306,6 +372,9 @@ nav .btn2 {
   align-items: center;
   justify-content: center;
   gap: 96px;
+}
+.working-card-left {
+  flex-direction: row-reverse;
 }
 .working-card div h2 {
   color: var(--bluel);
@@ -732,6 +801,7 @@ nav .btn2 {
   opacity: 0.8;
 }
 #end img {
+  display: block;
   width: 400px;
 }
 
@@ -812,35 +882,96 @@ footer .links3 .address {
 
 @media screen and (max-width: 840px) {
   /* NAV */
-  nav .links,
-  nav .btns {
+  nav > .links,
+  nav > .btns {
     display: none;
+    position: absolute;
   }
-  section {
-    width: 95%;
+
+  nav .links {
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    align-items: flex-start;
+    background-color: var(--whitell);
+    gap: 10px;
+    font-size: 20px;
+  }
+  nav .links a {
+    font-weight: bold;
+  }
+  nav .btns {
+    background-color: var(--whitell);
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .links-small {
+    display: flex;
   }
   /* HERO */
   #hero {
     grid-template-columns: 1fr;
+    width: 85%;
   }
   /* HOW IT WORKS */
+  #howItWorks {
+    width: 80%;
+  }
   .working-card {
     flex-direction: column-reverse;
   }
+  .working-card-left {
+    flex-direction: column-reverse;
+  }
   /* USE CASE */
+  #useCase {
+    width: 75%;
+  }
   .useCase-main {
     grid-template-columns: 1fr;
+  }
+  /* DEMO VIDEO */
+  #demoVideo {
+    width: 80%;
   }
   /* REVIEW */
   #review {
     grid-template-columns: 1fr;
   }
   /* PRICING */
+  #pricing {
+    width: 85%;
+  }
   .price-card {
     flex-direction: column;
   }
   .price-card .price {
     border-right: none;
     padding-right: 0;
+  }
+
+  /* END */
+  #end img {
+    display: none;
+  }
+
+  /* FAQ */
+  #faq {
+    width: 90%;
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
